@@ -5,7 +5,7 @@ From:suse:sles12
 
 zypper -n up
 
-# osg repo
+# OpenHPC repo
 zypper -n install https://github.com/openhpc/ohpc/releases/download/v1.3.GA/ohpc-release-1.3-1.SLE_12.x86_64.rpm
 
 zypper -n install perl

@@ -1,5 +1,5 @@
 bootstrap:docker
-FROM suse/sles12:latest
+From:suse:sles12
 
 %post
 

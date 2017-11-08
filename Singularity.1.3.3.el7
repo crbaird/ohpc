@@ -22,7 +22,7 @@ yum -y install \
     ohpc-gnu7-python-libs \
     ohpc-gnu7-serial-libs
 
-yum -i install lmod-defaults-gnu7-openmpi3-ohpc
+yum -y install lmod-defaults-gnu7-openmpi3-ohpc
 
 # verification
 ls -l /opt/ohpc/pub

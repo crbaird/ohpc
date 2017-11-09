@@ -24,6 +24,9 @@ yum -y install \
 
 yum -y install lmod-defaults-gnu7-openmpi3-ohpc
 
+# modify modules environment for singularity
+sed -ie '/^# NOOP if running under known/,+7d' lmod.sh
+
 # verification
 ls -l /opt/ohpc/pub
 

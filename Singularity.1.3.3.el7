@@ -22,8 +22,6 @@ yum -y install \
     ohpc-gnu7-python-libs \
     ohpc-gnu7-serial-libs
 
-yum -y install lmod-defaults-gnu7-openmpi3-ohpc
-
 # modify modules environment for singularity
 sed -ie '/^# NOOP if running under known/,+7d' /etc/profile.d/lmod.sh
 

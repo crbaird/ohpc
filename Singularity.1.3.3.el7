@@ -22,6 +22,8 @@ yum -y install \
     ohpc-gnu7-python-libs \
     ohpc-gnu7-serial-libs
 
+yum -y install lmod-defaults-gnu7-openmpi3-ohpc
+
 cat << EOF > /etc/profile.d/lmod.sh
 #!/bin/sh
 # -*- shell-script -*-

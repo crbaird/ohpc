@@ -32,11 +32,11 @@ cat << EOF > /etc/profile.d/lmod.sh
 ########################################################################
 
 # NOOP if running under known resource manager
-if [ ! -z "$SLURM_NODELIST" && -z "$SINGULARITY_CONTAINER" ]];then
+if [[ ! -z "$SLURM_NODELIST" && -z "$SINGULARITY_CONTAINER" ]];then
      return
 fi
 
-if [ ! -z "$PBS_NODEFILE" && -z "$SINGULARITY_CONTAINER" ]];then
+if [[ ! -z "$PBS_NODEFILE" && -z "$SINGULARITY_CONTAINER" ]];then
     return
 fi
 
